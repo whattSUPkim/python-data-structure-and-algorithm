@@ -7,7 +7,7 @@ m1, m2 = m1m2.split('+')
 def decomposition(x:str):
     result = []
     for i in x:
-        if i not in ['O', 'C', 'H']:
+        if i.isdigit():
             tmp = result[-1] * int(i)
             result.extend(tmp[:-1])
         else:
