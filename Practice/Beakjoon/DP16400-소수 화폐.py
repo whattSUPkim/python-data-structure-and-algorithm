@@ -14,8 +14,6 @@
 7 (1) 0  0  0  0  0  0  1  0
 =     0  1  1  1  2  2  2  3
 '''
-import math
-
 def prime(n):
     t_f = [False, False] + [True for _ in range(2, n+1)]
     for i in range(2, n+1):
